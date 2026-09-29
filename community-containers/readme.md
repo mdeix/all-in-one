@@ -37,6 +37,7 @@ flowchart TD
     end
 
     subgraph COMM_MEDIA["🎬 Media"]
+        IMMICH(["🖼️  Immich\nPhoto Management"]):::community
         PLEX(["🎞️  Plex\nMedia Server"]):::community
         JELLY(["🎬  Jellyfin\nMedia Server"]):::community
         DLNA(["📡  DLNA\nMedia Streaming"]):::community

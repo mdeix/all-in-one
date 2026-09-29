@@ -25,6 +25,7 @@ This container creates Let's Encrypt certificates for subdomains of `your-nc-dom
 | [azuracast](https://github.com/nextcloud/all-in-one/tree/main/community-containers/azuracast)                       | `radio.your-nc-domain.com`       | ✅           |               |                |
 | [gitea](https://github.com/nextcloud/all-in-one/tree/main/community-containers/gitea)                               | `git.your-nc-domain.com`         | ✅           |               |                |
 | [glances](https://github.com/nextcloud/all-in-one/tree/main/community-containers/glances)                           | `glances.your-nc-domain.com`     | ✅           |               | ✅             |
+| [immich](https://github.com/nextcloud/all-in-one/tree/main/community-containers/immich)                             | `photo.your-nc-domain.com`       | ✅           |               |                |
 | [jellyfin](https://github.com/nextcloud/all-in-one/tree/main/community-containers/jellyfin)                         | `media.your-nc-domain.com`       | ✅           |               |                |
 | [joplin-server](https://github.com/nextcloud/all-in-one/tree/main/community-containers/joplin-server)               | `joplin.your-nc-domain.com`      | ✅           |               |                |
 | [lldap](https://github.com/nextcloud/all-in-one/tree/main/community-containers/lldap)                               | `ldap.your-nc-domain.com`        | ✅           | ✅            |                |
@@ -34,6 +35,9 @@ This container creates Let's Encrypt certificates for subdomains of `your-nc-dom
 | [seerr](https://github.com/nextcloud/all-in-one/tree/main/community-containers/jellyseerr)                          | `requests.your-nc-domain.com`    | ✅           |               |                |
 | [stalwart](https://github.com/nextcloud/all-in-one/tree/main/community-containers/stalwart)                         | `mail.your-nc-domain.com`        | ✅           | ✅            |                |
 | [vaultwarden](https://github.com/nextcloud/all-in-one/tree/main/community-containers/vaultwarden)                   | `bw.your-nc-domain.com`          | ✅           | ✅            |                |
+
+> [!Note]
+> Automatic configuration for the [immich](https://github.com/nextcloud/all-in-one/tree/main/community-containers/immich) community container requires a Caddy image that already includes its route. If `photo.your-nc-domain.com` is not configured automatically, add it via the [custom configuration](#custom-configuration) import until the route is part of an official Caddy release.
 
 ## Geoblocking
 
